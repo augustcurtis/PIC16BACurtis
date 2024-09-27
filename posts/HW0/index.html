@@ -154,8 +154,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>The Palmer Penguin dataset contains data for 344 penguins, including 3 species from 3 different islands in the Palmer Archipelago, Antarctica.</p>
-<p>To visualize this data in an interesting manner I decided to graph the penguins’ mass on the x-axis and their flipper length on the y-axis. I then created a scatter plot and seperated the penguins into two groups based on their sex (Male and Female). I then proceeded to add the line of best fit for each group. A screenshot of the graph is imported below.</p>
+<p>#Introduction The Palmer Penguin dataset contains data for 344 penguins, including 3 species from 3 different islands in the Palmer Archipelago, Antarctica.</p>
+<p>To visualize this data in an interesting manner I decided to graph the penguins’ mass on the x-axis and their flipper length on the y-axis. I then created a scatter plot and seperated the penguins into two groups based on their sex (Male and Female). I then proceeded to add the line of best fit for each group.</p>
+<p>#Code Analysis Now to dive into the code that made this possible:</p>
+<p>This code sets shows what libraries I used and also how I read in the Palmer Penguin data from the web ’’’ import pandas as pd # To convert the csv data into a dataframe import matplotlib.pyplot as plt # To convert the data frame info into a graph import numpy as np # To generate the line of best fit for the data</p>
+<section id="imports-the-csv-data-from-the-web" class="level1">
+<h1>Imports the csv data from the web</h1>
+<p>url = “https://raw.githubusercontent.com/pic16b-ucla/24W/main/datasets/palmer_penguins.csv”</p>
+</section>
+<section id="converts-the-data-into-a-pandas-dataframe" class="level1">
+<h1>Converts the data into a pandas dataframe</h1>
+<p>penguins = pd.read_csv(url) ’’’</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="PIC16BPalmerPenguinScatterPlot.png" class="img-fluid figure-img"></p>
@@ -164,6 +173,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
